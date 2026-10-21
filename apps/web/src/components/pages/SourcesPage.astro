@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SiteHeader from "../SiteHeader.astro";
+import SiteFooter from "../SiteFooter.astro";
+import type { Meta } from "../../lib/types";
+import { getMessages, localePath, type Locale } from "../../i18n";
+import meta from "../../../public/data/meta.json";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = getMessages(locale);
+const s = m.sources;
+const metaCopy = m.meta;
+const raw = meta as Meta;
+---
+
+<BaseLayout
+  title={s.title}
+  description={s.description}
+  canonicalPath="/sources"
+  locale={locale}
+>
+  <SiteHeader locale={locale} />
+  <main class="mx-auto max-w-[720px] px-6 py-10 pb-16">
+    <h1 class="m-0 text-3xl font-bold tracking-tight">{s.h1}</h1>
+    <p class="mt-4 text-muted leading-relaxed">{s.intro}</p>
+
+    <h2 class="mt-10 text-xl font-bold">
+      {s.currentIndicator}{metaCopy.indicatorName}
+    </h2>
+    <dl class="mt-4 space-y-3 text-sm">
+      <div class="flex gap-3 border-b border-line py-3">
+        <dt class="w-28 shrink-0 text-muted">{s.dtScope}</dt>
+        <dd class="m-0 text-ink">
+          {s.scopeValue}{metaCopy.methodologyNote}
+        </dd>
+      </div>
+      <div class="flex gap-3 border-b border-line py-3">
+        <dt class="w-28 shrink-0 text-muted">{s.dtUnit}</dt>
+        <dd class="m-0 text-ink"
+          >{metaCopy.unit}{metaCopy.unitDisplayNote}</dd
+        >
+      </div>
+      <div class="flex gap-3 border-b border-line py-3">
+        <dt class="w-28 shrink-0 text-muted">{s.dtPublisher}</dt>
+        <dd class="m-0 text-ink">{metaCopy.publisher}</dd>
+      </div>
+      <div class="flex gap-3 border-b border-line py-3">
+        <dt class="w-28 shrink-0 text-muted">{s.dtSourceUrl}</dt>
+        <dd class="m-0">
+          <a href={raw.source_url} rel="noopener noreferrer" target="_blank"
+            >{raw.source_url}</a
+          >
+        </dd>
+      </div>
+      <div class="flex gap-3 border-b border-line py-3">
+        <dt class="w-28 shrink-0 text-muted">{s.dtRetrieved}</dt>
+        <dd class="m-0 text-ink">{raw.retrieved_at}</dd>
+      </div>
+      <div class="flex gap-3 py-3">
+        <dt class="w-28 shrink-0 text-muted">{s.dtLicense}</dt>
+        <dd class="m-0 text-ink">{metaCopy.licenseNote}</dd>
+      </div>
+    </dl>
+
+    <h2 class="mt-10 text-xl font-bold">{s.mapTitle}</h2>
+    <p class="mt-3 text-muted leading-relaxed">
+      {s.mapBodyBefore}<strong class="text-ink">{s.mapBodyStrong}</strong
+      >{s.mapBodyAfter}
+      <a href={`${localePath(locale, "/about")}#disclaimer`}
+        >{s.mapDisclaimer}</a
+      >{s.mapLinkEnd}
+    </p>
+
+    <h2 class="mt-10 text-xl font-bold">{s.updateTitle}</h2>
+    <p class="mt-3 text-muted leading-relaxed">
+      {s.updateBodyBefore}<code class="text-ink">etl/</code
+      >{s.updateBodyAfter}
+    </p>
+    <p class="mt-8">
+      <a href={`${localePath(locale, "/about")}#disclaimer`}
+        >{s.mapDisclaimer}</a
+      >
+      ·
+      <a href={localePath(locale, "/")}>{s.backHome}</a>
+    </p>
+  </main>
+  <SiteFooter locale={locale} />
+</BaseLayout>

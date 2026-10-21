@@ -1,0 +1,14 @@
+{
+  "name": "renkou",
+  "private": true,
+  "version": "0.1.0",
+  "description": "China population guided data explorer",
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "preview": "npm run preview --workspace=apps/web"
+  },
+  "workspaces": [
+    "apps/web"
+  ]
+}

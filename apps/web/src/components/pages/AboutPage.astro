@@ -1,0 +1,100 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SiteHeader from "../SiteHeader.astro";
+import SiteFooter from "../SiteFooter.astro";
+import { getMessages, localePath, type Locale } from "../../i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = getMessages(locale).about;
+---
+
+<BaseLayout
+  title={m.title}
+  description={m.description}
+  canonicalPath="/about"
+  locale={locale}
+>
+  <SiteHeader locale={locale} />
+  <main class="mx-auto max-w-[720px] px-6 py-10 pb-16">
+    <h1 class="m-0 text-3xl font-bold tracking-tight">{m.h1}</h1>
+    <p class="mt-4 text-muted leading-relaxed">
+      {m.introBefore}<strong class="text-ink">{m.introStrong}</strong
+      >{m.introAfter}
+    </p>
+
+    <h2 class="mt-10 text-xl font-bold">{m.whatTitle}</h2>
+    <ul class="mt-3 list-disc space-y-2 pl-5 text-muted leading-relaxed">
+      <li>{m.what1}</li>
+      <li>{m.what2}</li>
+      <li>{m.what3}</li>
+    </ul>
+
+    <section id="disclaimer" class="scroll-mt-8">
+      <h2 class="mt-12 border-t border-line pt-10 text-xl font-bold">
+        {m.disclaimerTitle}
+      </h2>
+      <p class="mt-2 text-sm text-muted">{m.disclaimerLead}</p>
+
+      <h3 class="mt-8 text-base font-bold text-ink">{m.s1Title}</h3>
+      <p class="mt-2 text-muted leading-relaxed">
+        {m.s1BodyBefore}<strong class="text-ink">{m.s1Not}</strong
+        >{m.s1BodyAfter}
+      </p>
+
+      <h3 class="mt-8 text-base font-bold text-ink">{m.s2Title}</h3>
+      <ul class="mt-2 list-disc space-y-2 pl-5 text-muted leading-relaxed">
+        <li>{m.s2Li1}</li>
+        <li>
+          <strong class="text-ink">{m.s2Li2Strong}</strong>
+          {m.s2Li2After}
+        </li>
+        <li>
+          {m.s2Li3Before}
+          <a href={localePath(locale, "/sources")}>{m.s2Li3Link}</a>
+          {m.s2Li3After}
+        </li>
+        <li>{m.s2Li4}</li>
+      </ul>
+
+      <h3 class="mt-8 text-base font-bold text-ink">{m.s3Title}</h3>
+      <ul class="mt-2 list-disc space-y-2 pl-5 text-muted leading-relaxed">
+        <li>
+          {m.s3Li1Before}<strong class="text-ink">{m.s3Li1Viz}</strong
+          >{m.s3Li1Mid}<strong class="text-ink">{m.s3Li1Not}</strong
+          >{m.s3Li1Mid2}<strong class="text-ink">{m.s3Li1NoLegal}</strong
+          >{m.s3Li1End}
+        </li>
+        <li>
+          {m.s3Li2Before}<strong class="text-ink">{m.s3Li2Strong}</strong
+          >{m.s3Li2After}
+        </li>
+        <li>
+          <strong class="text-ink">{m.s3Li3Color}</strong
+          >{m.s3Li3Mid}<strong class="text-ink">{m.s3Li3Mainland}</strong
+          >{m.s3Li3Mid2}<strong class="text-ink">{m.s3Li3NotEq}</strong
+          >{m.s3Li3After}
+        </li>
+        <li>{m.s3Li4}</li>
+      </ul>
+
+      <h3 class="mt-8 text-base font-bold text-ink">{m.s4Title}</h3>
+      <p class="mt-2 text-muted leading-relaxed">{m.s4Body}</p>
+
+      <h3 class="mt-8 text-base font-bold text-ink">{m.s5Title}</h3>
+      <p class="mt-2 text-muted leading-relaxed">{m.s5Body}</p>
+    </section>
+
+    <h2 class="mt-12 text-xl font-bold">{m.contactTitle}</h2>
+    <p class="mt-3 text-muted leading-relaxed">{m.contactBody}</p>
+    <p class="mt-8">
+      <a href={localePath(locale, "/sources")}>{m.sourcesLink}</a>
+      ·
+      <a href={localePath(locale, "/")}>{m.backHome}</a>
+    </p>
+  </main>
+  <SiteFooter locale={locale} />
+</BaseLayout>

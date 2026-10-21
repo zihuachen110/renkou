@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>人口观 · UI v0.4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #fafafa;
+      --surface: #ffffff;
+      --ink: #18181b;
+      --muted: #71717a;
+      --line: #e4e4e7;
+      --accent: #0e7490;
+      --accent-soft: #ecfeff;
+      --map-low: #a5f3fc;
+      --map-high: #155e75;
+      --radius: 2px;
+      --font: "Fira Sans", system-ui, sans-serif;
+      --mono: "Fira Code", ui-monospace, monospace;
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--bg);
+      font-size: 16px;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    button, input { font: inherit; }
+    a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: #0f766e; }
+
+    /* —— Shell —— */
+    .disclaimer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 10px 24px 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .disclaimer::before {
+      content: "";
+      width: 2px;
+      height: 12px;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    header {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 20px 24px 0;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: -0.02em;
+      margin: 0;
+    }
+    .logo span { font-weight: 400; color: var(--muted); margin-left: 8px; font-size: 14px; }
+    nav { display: flex; gap: 20px; font-size: 13px; font-weight: 500; }
+    nav a { color: var(--muted); text-decoration: none; }
+    nav a:hover { color: var(--ink); }
+
+    main { max-width: var(--max); margin: 0 auto; padding: 0 24px 64px; }
+
+    /* —— Hero split —— */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 48px;
+      padding: 40px 0 48px;
+      border-bottom: 1px solid var(--line);
+      align-items: end;
+    }
+    @media (max-width: 840px) {
+      .hero { grid-template-columns: 1fr; gap: 28px; padding: 28px 0 36px; }
+      nav { display: none; }
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .hero-value {
+      font-family: var(--mono);
+      font-size: clamp(3rem, 7vw, 4.5rem);
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      margin: 0;
+    }
+    .hero-value .unit {
+      font-family: var(--font);
+      font-size: 0.28em;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0;
+      margin-left: 0.35em;
+    }
+    .hero-insight {
+      margin: 16px 0 0;
+      font-size: 17px;
+      line-height: 1.55;
+      color: var(--muted);
+      max-width: 28ch;
+    }
+    .hero-insight strong { color: var(--ink); font-weight: 600; }
+    .hero-meta {
+      margin: 20px 0 0;
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+    }
+
+    .trend-panel { min-width: 0; }
+    .trend-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+    .trend-head h2 {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+    }
+    .trend-head span { font-size: 12px; color: var(--muted); }
+
+    .chart-wrap {
+      position: relative;
+      height: 160px;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      padding: 0 0 4px;
+    }
+    .chart-wrap svg { width: 100%; height: 100%; display: block; }
+    .year-ticks {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      padding: 0 4px;
+    }
+    .year-ticks button {
+      border: 0;
+      background: none;
+      padding: 8px 4px;
+      min-height: 36px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      cursor: pointer;
+      border-radius: var(--radius);
+      position: relative;
+    }
+    .year-ticks button:hover { color: var(--ink); }
+    .year-ticks button[aria-pressed="true"] {
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .year-ticks button[aria-pressed="true"]::after {
+      content: "";
+      position: absolute;
+      left: 20%;
+      right: 20%;
+      bottom: 0;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    /* —— Explore module (OWID-like) —— */
+    .explore {
+      margin-top: 40px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .explore-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .tabs {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .tabs button {
+      border: 0;
+      background: var(--bg);
+      padding: 0 14px;
+      height: 32px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .tabs button[aria-selected="true"] {
+      background: var(--accent);
+      color: #fff;
+    }
+    .tabs button:hover:not([aria-selected="true"]) { color: var(--ink); }
+
+    .explore-meta {
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--accent);
+    }
+    .explore-actions { margin-left: auto; display: flex; gap: 8px; }
+    .ghost {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      padding: 0 12px;
+      height: 32px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: var(--radius);
+      color: var(--ink);
+    }
+    .ghost:hover { border-color: #a1a1aa; }
+    .ghost:active { transform: scale(0.98); }
+
+    .explore-body {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      min-height: 420px;
+    }
+    @media (max-width: 840px) {
+      .explore-body { grid-template-columns: 1fr; }
+      .explore-actions { margin-left: 0; width: 100%; }
+    }
+
+    .viz {
+      position: relative;
+      min-height: 440px;
+      background: var(--surface);
+      border-right: 1px solid var(--line);
+    }
+    @media (max-width: 840px) {
+      .viz { border-right: 0; border-bottom: 1px solid var(--line); }
+    }
+
+    .map-stage {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+    }
+    .china {
+      width: min(100%, 420px);
+      aspect-ratio: 5 / 4;
+      position: relative;
+    }
+    .china svg { width: 100%; height: 100%; }
+    .region {
+      cursor: pointer;
+      transition: fill 180ms ease;
+      stroke: #fff;
+      stroke-width: 1.2;
+    }
+    .region:hover { filter: brightness(1.08); }
+    .region.is-active { stroke: var(--ink); stroke-width: 2; }
+
+    .legend {
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+      font-size: 11px;
+      color: var(--muted);
+      width: 160px;
+      padding: 0;
+    }
+    .legend-bar {
+      height: 8px;
+      margin: 6px 0 4px;
+      border-radius: 1px;
+      background: linear-gradient(90deg, var(--map-low), var(--accent), var(--map-high));
+    }
+    .legend-row { display: flex; justify-content: space-between; }
+
+    .panel-rank, .panel-table { display: none; padding: 20px; overflow: auto; }
+    .panel-rank.is-on, .panel-table.is-on { display: block; }
+    .panel-map.is-on { display: block; }
+    .panel-map { display: none; position: absolute; inset: 0; }
+    .panel-map.is-on { display: block; }
+
+    .side {
+      padding: 20px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background: var(--bg);
+    }
+    .side h3 {
+      margin: 0 0 4px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .side .name {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .side .num {
+      font-family: var(--mono);
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      margin: 8px 0 0;
+    }
+    .side .num small {
+      font-family: var(--font);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--muted);
+      margin-left: 6px;
+    }
+    .side .src { margin: 8px 0 0; font-size: 12px; color: var(--muted); }
+    .side .compare {
+      margin: 10px 0 0;
+      font-size: 13px;
+      color: var(--ink);
+      font-weight: 600;
+      line-height: 1.45;
+    }
+    .side .compare span {
+      display: block;
+      margin-top: 2px;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      padding: 12px 16px;
+      border-top: 1px solid var(--line);
+      background: var(--bg);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .meta-bar strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .rank-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+    .rank-list button {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 18px 1fr auto;
+      gap: 8px;
+      align-items: center;
+      border: 0;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      text-align: left;
+      color: inherit;
+      font-size: 12px;
+    }
+    .rank-list button:hover .fill { opacity: 0.85; }
+    .rank-list .i { color: var(--muted); font-variant-numeric: tabular-nums; }
+    .rank-list .track {
+      height: 4px;
+      background: #e4e4e7;
+      border-radius: 1px;
+      overflow: hidden;
+      grid-column: 2 / -1;
+      margin-top: -2px;
+    }
+    .rank-list .fill {
+      display: block;
+      height: 100%;
+      background: var(--accent);
+    }
+    .rank-list .v {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .rank-list .label { font-weight: 500; }
+
+    /* Table inside explore */
+    .data-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .data-table th {
+      text-align: left;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .data-table td {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      font-variant-numeric: tabular-nums;
+    }
+    .data-table td:nth-child(2),
+    .data-table td:nth-child(3) { font-family: var(--mono); font-size: 12px; }
+    .data-table tr { cursor: pointer; }
+    .data-table tr:hover td { background: var(--accent-soft); }
+    .data-table tr.active td { background: var(--accent-soft); }
+
+    /* Insight row — aging topic, quiet */
+    .insights {
+      margin-top: 36px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 840px) { .insights { grid-template-columns: 1fr; } }
+    .insight {
+      padding: 28px 0;
+      padding-right: 32px;
+    }
+    .insight + .insight {
+      padding-left: 32px;
+      padding-right: 0;
+      border-left: 1px solid var(--line);
+    }
+    @media (max-width: 840px) {
+      .insight + .insight {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .insight { padding-right: 0; }
+    }
+    .insight h2 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .insight p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+      max-width: 42ch;
+    }
+    .insight a {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .insight a::after { content: " →"; }
+
+    .ad {
+      margin-top: 28px;
+      border: 1px dashed var(--line);
+      color: #a1a1aa;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 20px;
+      background: var(--surface);
+    }
+
+    footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+    footer .links { display: flex; gap: 16px; }
+    footer a { color: var(--muted); text-decoration: none; }
+    footer a:hover { color: var(--ink); }
+
+    .mock-tag {
+      position: fixed;
+      right: 12px;
+      bottom: 12px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: var(--ink);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: var(--radius);
+      z-index: 20;
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <p class="disclaimer">非官方独立项目 · 数据以国家统计局 / 各省统计局发布为准</p>
+
+  <header>
+    <p class="logo">人口观<span>China Population</span></p>
+    <nav>
+      <a href="#explore">探索</a>
+      <a href="#insights">专题</a>
+      <a href="#">来源</a>
+      <a href="#">关于</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Overview -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow" id="hero-title">全国总人口</p>
+        <p class="hero-value" id="hero-num">14.12<span class="unit">亿人</span></p>
+        <p class="hero-insight">
+          <strong id="hero-year-label">2020</strong> 年常住人口。
+          点右侧年份，可看二十年来的全国人口变化。
+        </p>
+        <div class="hero-meta">
+          <span>口径：常住人口</span>
+          <span>·</span>
+          <a href="#">数据来源与方法</a>
+        </div>
+      </div>
+
+      <div class="trend-panel">
+        <div class="trend-head">
+          <h2>全国各年人口</h2>
+          <span>点击年份同步下方地图</span>
+        </div>
+        <div class="chart-wrap" aria-hidden="true">
+          <svg id="trend-svg" viewBox="0 0 560 160" preserveAspectRatio="none"></svg>
+        </div>
+        <div class="year-ticks" id="year-ticks" role="group" aria-label="选择年份"></div>
+      </div>
+    </section>
+
+    <!-- Zoom / explore -->
+    <section class="explore" id="explore" aria-label="人口分布探索">
+      <div class="explore-bar">
+        <div class="tabs" role="tablist">
+          <button type="button" role="tab" aria-selected="true" data-tab="map">地图</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="rank">排名</button>
+          <button type="button" role="tab" aria-selected="false" data-tab="table">表格</button>
+        </div>
+        <div class="explore-meta">
+          <span class="dot" aria-hidden="true"></span>
+          <span>总人口 · <strong id="bar-year" style="color:var(--ink)">2020</strong></span>
+          <span>·</span>
+          <span id="bar-crumb">全国 › 省</span>
+        </div>
+        <div class="explore-actions">
+          <button class="ghost" type="button">下载 CSV</button>
+          <button class="ghost" type="button">来源</button>
+        </div>
+      </div>
+
+      <div class="explore-body">
+        <div class="viz" id="viz">
+          <div class="panel-map is-on" data-panel="map">
+            <div class="map-stage">
+              <div class="china" id="china-map"></div>
+            </div>
+            <div class="legend">
+              <div>常住人口（示意）</div>
+              <div class="legend-bar"></div>
+              <div class="legend-row"><span>少</span><span>多</span></div>
+            </div>
+          </div>
+          <div class="panel-rank" data-panel="rank">
+            <table class="data-table" id="rank-full">
+              <thead>
+                <tr><th>#</th><th>地区</th><th>人口（万人）</th><th>占全国</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="panel-table" data-panel="table">
+            <table class="data-table" id="table-full">
+              <thead>
+                <tr><th>地区</th><th>人口（万人）</th><th>占全国</th><th>来源</th></tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+
+        <aside class="side">
+          <div>
+            <h3>当前选中</h3>
+            <p class="name" id="sel-name">全国</p>
+            <p class="num" id="sel-num">14.12<small>亿人</small></p>
+            <p class="compare" id="sel-compare">当前为全国口径<span>各年变化见上方趋势</span></p>
+            <p class="src">来源：国家统计局（示意）· <a href="#">溯源</a></p>
+          </div>
+          <div>
+            <h3>省级排名</h3>
+            <ul class="rank-list" id="side-rank"></ul>
+          </div>
+        </aside>
+      </div>
+      <div class="meta-bar" aria-label="数据元信息">
+        <span>来源：<strong>国家统计局（示意）</strong></span>
+        <span>口径：<strong>常住人口</strong></span>
+        <span>获取：<strong>2026-10-20</strong></span>
+        <span><a href="#">完整方法与原始链接</a></span>
+      </div>
+    </section>
+
+    <!-- Details / topics -->
+    <section class="insights" id="insights">
+      <article class="insight">
+        <h2>哪里在变老？</h2>
+        <p>用 2010 与 2020 老龄化率对比，下钻到地级市——适合分享的专题视角，不打断总人口主线。</p>
+        <a href="#">打开老龄化专题</a>
+      </article>
+      <article class="insight">
+        <h2>数据如何更新？</h2>
+        <p>全站静态托管。官方公报更新后，替换 JSON 并重新部署；每条数值可追溯原始发布页。</p>
+        <a href="#">阅读方法说明</a>
+      </article>
+    </section>
+
+    <div class="ad">广告位 · 默认关闭 · 不遮挡数据</div>
+  </main>
+
+  <footer>
+    <div class="links">
+      <a href="#">来源</a>
+      <a href="#">关于</a>
+      <a href="#">隐私</a>
+      <a href="#">广告说明</a>
+    </div>
+    <span>UI Mock v0.4 · 引导式探索</span>
+  </footer>
+
+  <div class="mock-tag">Mock v0.4</div>
+
+  <script>
+    const national = [
+      { year: 2000, value: 126743 },
+      { year: 2005, value: 130756 },
+      { year: 2010, value: 134091 },
+      { year: 2015, value: 137462 },
+      { year: 2020, value: 141178 },
+    ];
+    const provinces = [
+      { id: "gd", name: "广东", value: 12601 },
+      { id: "sd", name: "山东", value: 10153 },
+      { id: "ha", name: "河南", value: 9937 },
+      { id: "js", name: "江苏", value: 8475 },
+      { id: "sc", name: "四川", value: 8367 },
+      { id: "he", name: "河北", value: 7461 },
+    ];
+    const shapes = {
+      gd: "M340,210 C360,200 390,220 385,250 C380,280 350,290 330,275 C310,260 320,220 340,210 Z",
+      sd: "M330,95 C355,85 380,100 375,130 C370,155 340,160 320,145 C305,130 312,105 330,95 Z",
+      ha: "M280,130 C305,120 325,140 318,170 C310,195 280,200 260,180 C245,160 255,140 280,130 Z",
+      js: "M350,140 C370,135 385,155 378,180 C370,200 345,205 330,185 C320,165 332,148 350,140 Z",
+      sc: "M180,160 C220,145 250,170 245,210 C240,250 200,265 170,240 C145,215 150,175 180,160 Z",
+      he: "M300,70 C325,60 345,80 338,110 C330,135 300,140 280,120 C265,100 278,80 300,70 Z",
+    };
+
+    let year = 2020;
+    let selected = null;
+    const maxP = Math.max.apply(null, provinces.map(function (p) { return p.value; }));
+
+    function totalAt(y) {
+      return national.find(function (d) { return d.year === y; }).value;
+    }
+    function fmt(n) {
+      return n.toLocaleString("zh-CN");
+    }
+    function fmtYi(n) {
+      return (n / 10000).toFixed(2);
+    }
+    function setNum(el, yiText) {
+      el.textContent = "";
+      el.appendChild(document.createTextNode(yiText));
+      var unit = document.createElement("small");
+      unit.textContent = "亿人";
+      el.appendChild(unit);
+    }
+    function setCompare(wanValue) {
+      var el = document.getElementById("sel-compare");
+      el.textContent = "";
+      if (wanValue == null) {
+        el.appendChild(document.createTextNode("当前为全国口径"));
+        var sub = document.createElement("span");
+        sub.textContent = "各年变化见上方趋势";
+        el.appendChild(sub);
+        return;
+      }
+      var national = totalAt(year);
+      var pct = ((wanValue / national) * 100).toFixed(1);
+      el.appendChild(document.createTextNode("占全国 " + pct + "%"));
+      var sub2 = document.createElement("span");
+      sub2.textContent = "相对全国 · 横向对比";
+      el.appendChild(sub2);
+    }
+    function setHero(yiText) {
+      var el = document.getElementById("hero-num");
+      el.textContent = "";
+      el.appendChild(document.createTextNode(yiText));
+      var unit = document.createElement("span");
+      unit.className = "unit";
+      unit.textContent = "亿人";
+      el.appendChild(unit);
+    }
+    function colorFor(v) {
+      var t = v / maxP;
+      var a = [165, 243, 252];
+      var b = [21, 94, 117];
+      var r = Math.round(a[0] + (b[0] - a[0]) * t);
+      var g = Math.round(a[1] + (b[1] - a[1]) * t);
+      var bl = Math.round(a[2] + (b[2] - a[2]) * t);
+      return "rgb(" + r + "," + g + "," + bl + ")";
+    }
+    function svgEl(name, attrs) {
+      var el = document.createElementNS("http://www.w3.org/2000/svg", name);
+      if (attrs) {
+        Object.keys(attrs).forEach(function (k) {
+          el.setAttribute(k, attrs[k]);
+        });
+      }
+      return el;
+    }
+
+    function renderMap() {
+      var root = document.getElementById("china-map");
+      root.textContent = "";
+      var svg = svgEl("svg", {
+        viewBox: "0 0 480 320",
+        role: "img",
+        "aria-label": "中国人口分布示意",
+      });
+      svg.appendChild(
+        svgEl("path", {
+          d: "M120,80 C180,40 280,35 360,70 C420,100 430,180 400,240 C360,300 240,310 160,270 C90,230 70,140 120,80 Z",
+          fill: "#e4e4e7",
+          stroke: "#a1a1aa",
+          "stroke-width": "1",
+        })
+      );
+      provinces.forEach(function (p) {
+        var path = svgEl("path", {
+          class: selected === p.name ? "region is-active" : "region",
+          d: shapes[p.id],
+          fill: colorFor(p.value),
+          "data-name": p.name,
+          "data-val": String(p.value),
+        });
+        path.addEventListener("click", function () {
+          selectPlace(p.name, p.value);
+        });
+        svg.appendChild(path);
+      });
+      root.appendChild(svg);
+    }
+
+    function renderTrend() {
+      var w = 560;
+      var h = 160;
+      var pad = { t: 20, r: 16, b: 16, l: 16 };
+      var vals = national.map(function (d) { return d.value; });
+      var min = Math.min.apply(null, vals) * 0.98;
+      var max = Math.max.apply(null, vals) * 1.01;
+      var x = function (i) {
+        return pad.l + (i / (national.length - 1)) * (w - pad.l - pad.r);
+      };
+      var y = function (v) {
+        return pad.t + (1 - (v - min) / (max - min)) * (h - pad.t - pad.b);
+      };
+      var pts = national.map(function (d, i) {
+        return [x(i), y(d.value)];
+      });
+      var line = pts
+        .map(function (p, i) {
+          return (i ? "L" : "M") + p[0].toFixed(1) + "," + p[1].toFixed(1);
+        })
+        .join(" ");
+      var area =
+        line +
+        " L" +
+        pts[pts.length - 1][0] +
+        "," +
+        (h - pad.b) +
+        " L" +
+        pts[0][0] +
+        "," +
+        (h - pad.b) +
+        " Z";
+      var activeIdx = national.findIndex(function (d) {
+        return d.year === year;
+      });
+      var ax = pts[activeIdx][0];
+      var ay = pts[activeIdx][1];
+
+      var svg = document.getElementById("trend-svg");
+      while (svg.firstChild) svg.removeChild(svg.firstChild);
+      svg.setAttribute("viewBox", "0 0 560 160");
+
+      var defs = svgEl("defs");
+      var grad = svgEl("linearGradient", {
+        id: "fillG",
+        x1: "0",
+        y1: "0",
+        x2: "0",
+        y2: "1",
+      });
+      grad.appendChild(
+        svgEl("stop", {
+          offset: "0%",
+          "stop-color": "#0e7490",
+          "stop-opacity": "0.18",
+        })
+      );
+      grad.appendChild(
+        svgEl("stop", {
+          offset: "100%",
+          "stop-color": "#0e7490",
+          "stop-opacity": "0",
+        })
+      );
+      defs.appendChild(grad);
+      svg.appendChild(defs);
+      svg.appendChild(svgEl("path", { d: area, fill: "url(#fillG)" }));
+      svg.appendChild(
+        svgEl("path", {
+          d: line,
+          fill: "none",
+          stroke: "#0e7490",
+          "stroke-width": "2.5",
+          "stroke-linejoin": "round",
+          "stroke-linecap": "round",
+        })
+      );
+      pts.forEach(function (p, i) {
+        var on = national[i].year === year;
+        svg.appendChild(
+          svgEl("circle", {
+            cx: String(p[0]),
+            cy: String(p[1]),
+            r: on ? "6" : "4",
+            fill: on ? "#0e7490" : "#fff",
+            stroke: "#0e7490",
+            "stroke-width": "2",
+          })
+        );
+      });
+      svg.appendChild(
+        svgEl("line", {
+          x1: String(ax),
+          y1: String(ay),
+          x2: String(ax),
+          y2: String(h - pad.b),
+          stroke: "#0e7490",
+          "stroke-width": "1",
+          "stroke-dasharray": "3 3",
+          opacity: "0.5",
+        })
+      );
+
+      var ticks = document.getElementById("year-ticks");
+      ticks.textContent = "";
+      national.forEach(function (d) {
+        var b = document.createElement("button");
+        b.type = "button";
+        b.textContent = String(d.year);
+        b.setAttribute("aria-pressed", d.year === year ? "true" : "false");
+        b.addEventListener("click", function () {
+          setYear(d.year);
+        });
+        ticks.appendChild(b);
+      });
+    }
+
+    function setYear(y) {
+      year = y;
+      var row = national.find(function (d) {
+        return d.year === y;
+      });
+      setHero(fmtYi(row.value));
+      document.getElementById("hero-year-label").textContent = String(y);
+      document.getElementById("bar-year").textContent = String(y);
+      if (!selected) {
+        setNum(document.getElementById("sel-num"), fmtYi(row.value));
+        setCompare(null);
+      } else {
+        var p = provinces.find(function (x) { return x.name === selected; });
+        if (p) setCompare(p.value);
+      }
+      renderTrend();
+      renderSideRank();
+      renderTables();
+    }
+
+    function selectPlace(name, value) {
+      selected = name;
+      document.getElementById("sel-name").textContent = name;
+      setNum(document.getElementById("sel-num"), fmtYi(value));
+      setCompare(value);
+      document.getElementById("bar-crumb").textContent = "全国 › " + name;
+      renderMap();
+      renderTables();
+    }
+
+    function renderSideRank() {
+      var ul = document.getElementById("side-rank");
+      ul.textContent = "";
+      provinces
+        .slice()
+        .sort(function (a, b) {
+          return b.value - a.value;
+        })
+        .slice(0, 5)
+        .forEach(function (p, idx) {
+          var li = document.createElement("li");
+          var btn = document.createElement("button");
+          btn.type = "button";
+          var i = document.createElement("span");
+          i.className = "i";
+          i.textContent = String(idx + 1);
+          var label = document.createElement("span");
+          label.className = "label";
+          label.textContent = p.name;
+          var v = document.createElement("span");
+          v.className = "v";
+          v.textContent = fmtYi(p.value);
+          var track = document.createElement("span");
+          track.className = "track";
+          var fill = document.createElement("i");
+          fill.className = "fill";
+          fill.style.width = (p.value / maxP) * 100 + "%";
+          track.appendChild(fill);
+          btn.appendChild(i);
+          btn.appendChild(label);
+          btn.appendChild(v);
+          btn.appendChild(track);
+          btn.addEventListener("click", function () {
+            selectPlace(p.name, p.value);
+          });
+          li.appendChild(btn);
+          ul.appendChild(li);
+        });
+    }
+
+    function renderTables() {
+      var total = totalAt(year);
+      var sorted = provinces.slice().sort(function (a, b) {
+        return b.value - a.value;
+      });
+      function fill(tbody, withRank) {
+        tbody.textContent = "";
+        sorted.forEach(function (p, i) {
+          var tr = document.createElement("tr");
+          if (selected === p.name) tr.classList.add("active");
+          var share = ((p.value / total) * 100).toFixed(1);
+          var cells = withRank
+            ? [String(i + 1), p.name, fmt(p.value), share + "%"]
+            : [p.name, fmt(p.value), share + "%", "统计局（示意）"];
+          cells.forEach(function (text) {
+            var td = document.createElement("td");
+            td.textContent = text;
+            tr.appendChild(td);
+          });
+          tr.addEventListener("click", function () {
+            selectPlace(p.name, p.value);
+          });
+          tbody.appendChild(tr);
+        });
+      }
+      fill(document.querySelector("#rank-full tbody"), true);
+      fill(document.querySelector("#table-full tbody"), false);
+    }
+
+    document.querySelectorAll(".tabs button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        document.querySelectorAll(".tabs button").forEach(function (b) {
+          b.setAttribute("aria-selected", b === btn ? "true" : "false");
+        });
+        var tab = btn.getAttribute("data-tab");
+        document.querySelectorAll("[data-panel]").forEach(function (p) {
+          p.classList.toggle("is-on", p.getAttribute("data-panel") === tab);
+        });
+      });
+    });
+
+    document.getElementById("sel-name").addEventListener("click", function () {
+      selected = null;
+      document.getElementById("sel-name").textContent = "全国";
+      setNum(document.getElementById("sel-num"), fmtYi(totalAt(year)));
+      setCompare(null);
+      document.getElementById("bar-crumb").textContent = "全国 › 省";
+      renderMap();
+      renderTables();
+    });
+
+    renderTrend();
+    renderMap();
+    renderSideRank();
+    renderTables();
+  </script>
+</body>
+</html>

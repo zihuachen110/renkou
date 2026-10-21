@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SiteHeader from "../SiteHeader.astro";
+import SiteFooter from "../SiteFooter.astro";
+import { getMessages, localePath, type Locale } from "../../i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = getMessages(locale).ads;
+---
+
+<BaseLayout
+  title={m.title}
+  description={m.description}
+  canonicalPath="/ads"
+  locale={locale}
+>
+  <SiteHeader locale={locale} />
+  <main class="mx-auto max-w-[720px] px-6 py-10 pb-16">
+    <h1 class="m-0 text-3xl font-bold tracking-tight">{m.h1}</h1>
+    <p class="mt-4 text-muted leading-relaxed">
+      {m.introBefore}<code class="text-ink">ads.enabled = false</code
+      >{m.introAfter}
+    </p>
+    <ul class="mt-4 list-disc space-y-2 pl-5 text-muted leading-relaxed">
+      <li>{m.li1}</li>
+      <li>{m.li2}</li>
+      <li>{m.li3}</li>
+      <li>{m.li4}</li>
+    </ul>
+    <p class="mt-8">
+      <a href={localePath(locale, "/privacy")}>{m.privacyLink}</a>
+      ·
+      <a href={localePath(locale, "/")}>{m.backHome}</a>
+    </p>
+  </main>
+  <SiteFooter locale={locale} />
+</BaseLayout>

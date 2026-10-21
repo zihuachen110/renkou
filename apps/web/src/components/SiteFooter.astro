@@ -1,0 +1,38 @@
+---
+import { getLocaleFromUrl, localePath, type Locale } from "../i18n";
+import { getMessages } from "../i18n/messages";
+
+interface Props {
+  locale?: Locale;
+}
+
+const locale = Astro.props.locale ?? getLocaleFromUrl(Astro.url);
+const m = getMessages(locale);
+const links = [
+  { href: localePath(locale, "/sources"), label: m.nav.sources },
+  { href: localePath(locale, "/about"), label: m.nav.about },
+  {
+    href: `${localePath(locale, "/about")}#disclaimer`,
+    label: m.footer.disclaimer,
+  },
+  { href: localePath(locale, "/privacy"), label: m.nav.privacy },
+  { href: localePath(locale, "/ads"), label: m.nav.ads },
+];
+---
+
+<footer
+  class="mx-auto mt-8 flex max-w-content flex-wrap items-center justify-between gap-3 border-t border-line px-6 py-6 text-xs text-muted"
+>
+  <div class="flex flex-wrap gap-4">
+    {
+      links.map((l) => (
+        <a href={l.href} class="text-muted no-underline hover:text-ink">
+          {l.label}
+        </a>
+      ))
+    }
+  </div>
+  <span class="max-w-md text-right leading-relaxed">
+    {m.footer.tagline}
+  </span>
+</footer>

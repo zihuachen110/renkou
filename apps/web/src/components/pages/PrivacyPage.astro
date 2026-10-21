@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SiteHeader from "../SiteHeader.astro";
+import SiteFooter from "../SiteFooter.astro";
+import { getMessages, localePath, type Locale } from "../../i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const m = getMessages(locale).privacy;
+---
+
+<BaseLayout
+  title={m.title}
+  description={m.description}
+  canonicalPath="/privacy"
+  locale={locale}
+>
+  <SiteHeader locale={locale} />
+  <main class="mx-auto max-w-[720px] px-6 py-10 pb-16">
+    <h1 class="m-0 text-3xl font-bold tracking-tight">{m.h1}</h1>
+    <p class="mt-2 text-sm text-muted">{m.updated}</p>
+    <p class="mt-4 text-muted leading-relaxed">{m.intro}</p>
+    <h2 class="mt-10 text-xl font-bold">{m.analyticsTitle}</h2>
+    <p class="mt-3 text-muted leading-relaxed">{m.analyticsBody}</p>
+    <h2 class="mt-10 text-xl font-bold">{m.adsTitle}</h2>
+    <p class="mt-3 text-muted leading-relaxed">
+      {m.adsBodyBefore}
+      <a href={localePath(locale, "/ads")}>{m.adsLink}</a>
+      {m.adsBodyAfter}
+    </p>
+    <h2 class="mt-10 text-xl font-bold">{m.contactTitle}</h2>
+    <p class="mt-3 text-muted leading-relaxed">{m.contactBody}</p>
+    <p class="mt-8">
+      <a href={localePath(locale, "/")}>{m.backHome}</a>
+    </p>
+  </main>
+  <SiteFooter locale={locale} />
+</BaseLayout>

@@ -1,0 +1,3927 @@
+{
+  "2000": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1364.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1001.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 6674.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3247.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2372.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4184.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2682.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3807.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 1608.6
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7327.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 4679.91
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6093.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3410.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4149.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 8998.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9488.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5646.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6562.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 8650.03
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4751.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 789.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2848.82
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8329.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3756.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4241.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 258.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3644.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2515.31
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 517.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 554.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 1849.0
+    }
+  ],
+  "2001": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1385.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1004.06
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 6699.13
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3271.63
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2381.45
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4194.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2690.8
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3811.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 1668.33
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7359.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 4728.8
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6128.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3445.38
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4185.77
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9041.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9555.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5658.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6595.85
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 8733.18
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4788.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 795.55
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2829.21
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8143.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3798.51
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4287.4
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 263.55
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3653.14
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2523.35
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 523.1
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 563.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 1876.19
+    }
+  ],
+  "2002": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1423.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1007.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 6735.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3294.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2384.05
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4203.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2699.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3813.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 1712.97
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7406.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 4776.4
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6144.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3476.03
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4222.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9082.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9613.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5672.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6629.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 8842.08
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4822.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 803.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2814.43
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8110.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3837.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4333.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 268.24
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3662.24
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2530.76
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 529.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 572.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 1905.0
+    }
+  ],
+  "2003": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1456.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1011.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 6769.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3314.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2385.78
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4210.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2704.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3815.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 1765.84
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7458.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 4856.8
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6163.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3501.97
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4254.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9125.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9667.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5685.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6663.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 8962.69
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4857.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 811.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2803.19
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8176.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3870.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4376.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 272.16
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3671.74
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2537.19
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 534.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 580.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 1934.0
+    }
+  ],
+  "2004": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1493.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1024.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 6809.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3335.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2392.66
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4217.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2709.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3817.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 1834.98
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7523.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 4925.2
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6228.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3529.1
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4284.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9180.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9717.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5698.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6698.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 9110.66
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4889.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 818.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2793.32
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8090.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3904.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4415.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 276.35
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3681.23
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2541.48
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 539.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 588.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 1963.0
+    }
+  ],
+  "2005": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1538.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1042.53
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 6850.83
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3355.21
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2403.11
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4221.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2716.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3819.95
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 1890.26
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7588.24
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 4990.9
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6120.09
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3557.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4311.24
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9248.18
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9380.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5710.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6326.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 9194.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4660.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 828.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2798.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8212.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3730.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4450.4
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 280.31
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3690.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2545.1
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 543.2
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 596.2
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2010.35
+    }
+  ],
+  "2006": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1601.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1075.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 6897.86
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3374.55
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2415.05
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4271.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2723.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3823.01
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 1964.11
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7655.66
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 5071.8
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6110.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3585.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4339.13
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9308.9
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9392.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5693.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6342.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 9442.07
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4719.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 835.88
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2808.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8169.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3690.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4483.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 285.08
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3699.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2546.79
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 547.7
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 603.73
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2050.0
+    }
+  ],
+  "2007": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1676.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1115.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 6943.19
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3392.58
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2428.83
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4298.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2729.82
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3824.03
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2063.59
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7723.13
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 5154.9
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6118.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3612.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4368.41
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9366.97
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9360.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5699.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6355.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 9659.52
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4768.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 845.03
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2816.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8127.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3631.98
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4514.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 288.83
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3708.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2548.19
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 551.6
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 610.25
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2095.19
+    }
+  ],
+  "2008": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1771.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1176.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 6988.82
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3410.64
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2444.33
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4315.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2734.21
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3825.04
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2140.64
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7762.48
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 5212.4
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6135.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3639.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4400.1
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9417.23
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9429.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5711.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6380.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 9893.48
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4816.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 854.18
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2839.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8138.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3595.98
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4543.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 292.33
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3718.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2550.88
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 554.3
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 617.69
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2130.81
+    }
+  ],
+  "2009": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1860.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1228.16
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7034.4
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3427.36
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2458.22
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4341.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2739.55
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3826.01
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2210.28
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7810.27
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 5275.5
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6131.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3666.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4432.16
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9470.3
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9487.05
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5720.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6406.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 10130.19
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4856.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 864.07
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2859.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8185.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3537.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4571.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 295.84
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3727.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2554.91
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 557.3
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 625.2
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2158.63
+    }
+  ],
+  "2010": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 1961.24
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1293.82
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7185.42
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3571.21
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2470.63
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4374.63
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2746.23
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3831.22
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2301.91
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 7865.99
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 5442.69
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 5950.05
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3689.42
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4456.75
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9579.31
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9402.36
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5723.77
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6568.37
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 10430.31
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4602.66
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 867.15
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2884.62
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8041.82
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3474.65
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4596.62
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 300.22
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3732.74
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2557.53
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 562.67
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 630.13
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2181.33
+    }
+  ],
+  "2011": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2024.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1341.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7232.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3562.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2470.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4379.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2725.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3782.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2356.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8023.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 5570.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 5972.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3784.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4474.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9665.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9461.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5760.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6581.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 10756.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4655.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 890.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2944.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8064.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3530.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4620.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 309.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3765.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2552.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 568.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 648.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2225.0
+    }
+  ],
+  "2012": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2078.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1378.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7262.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3548.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2464.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4375.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2698.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3724.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2399.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8120.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 5685.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 5978.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3841.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4475.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9708.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9532.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5781.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6590.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 11041.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4694.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 910.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 2975.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8085.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3587.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4631.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 315.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3787.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2550.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 571.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 659.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2253.0
+    }
+  ],
+  "2013": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2125.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1410.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7288.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3535.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2455.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4365.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2668.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3666.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2448.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8192.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 5784.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 5988.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3885.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4476.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9746.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9573.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5798.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6600.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 11270.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4731.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 920.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3011.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8109.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3632.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4641.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 317.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3804.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2537.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 571.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 666.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2285.0
+    }
+  ],
+  "2014": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2171.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1429.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7323.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3528.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2449.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4358.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2642.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3608.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2467.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8281.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 5890.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 5997.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3945.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4480.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9808.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9645.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5816.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6611.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 11489.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4770.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 936.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3043.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8139.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3677.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4653.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 325.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3827.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2531.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 576.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 678.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2325.0
+    }
+  ],
+  "2015": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2188.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1439.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7345.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3519.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2440.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4338.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2613.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3529.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2458.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8315.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 5985.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6011.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 3984.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4485.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9866.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9701.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5850.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6615.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 11678.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4811.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 945.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3070.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8196.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3708.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4663.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 330.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3846.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2523.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 577.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 684.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2385.0
+    }
+  ],
+  "2016": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2195.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1443.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7375.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3514.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2436.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4327.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2567.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3463.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2467.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8381.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 6072.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6033.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 4016.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4496.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 9973.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9778.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5885.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6625.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 11908.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4857.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 957.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3110.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8251.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3758.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4677.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 340.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3874.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2520.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 582.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 695.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2428.0
+    }
+  ],
+  "2017": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2194.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1410.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7409.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3510.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2433.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4312.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2526.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3399.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2466.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8423.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 6170.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6057.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 4065.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4511.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 10033.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9829.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5904.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6633.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 12141.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4907.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 972.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3144.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8289.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3803.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4693.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 349.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3904.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2522.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 586.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 705.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2480.0
+    }
+  ],
+  "2018": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2192.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1383.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7426.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3502.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2422.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4291.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2484.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3327.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2475.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8446.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 6273.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6076.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 4104.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4513.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 10077.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9864.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5917.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6635.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 12348.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4947.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 982.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3163.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8321.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3822.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4703.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 354.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3931.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2515.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 587.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 710.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2520.0
+    }
+  ],
+  "2019": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2190.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1385.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7447.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3497.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2415.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4277.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2448.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3255.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2481.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8469.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 6375.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6092.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 4137.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4516.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 10106.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9901.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5927.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6640.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 12489.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 4982.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 995.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3188.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8351.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3848.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4714.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 361.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3944.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2509.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 590.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 717.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2559.0
+    }
+  ],
+  "2020": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2189.31
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1386.6
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7461.02
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3491.56
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2404.92
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4259.14
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2407.35
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3185.01
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2487.09
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8474.8
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 6456.76
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6102.72
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 4154.01
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4518.86
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 10152.75
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9936.55
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5775.26
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6644.49
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 12601.25
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 5012.68
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 1008.12
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3205.42
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8367.49
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3856.21
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4720.93
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 364.81
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3952.9
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2501.98
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 592.4
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 720.27
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2585.23
+    }
+  ],
+  "2021": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2189.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1373.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7448.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3480.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2400.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4229.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2375.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3125.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2489.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8505.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 6540.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6113.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 4187.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4517.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 10170.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9883.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5830.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6622.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 12684.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 5037.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 1020.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3212.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8372.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3852.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4690.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 366.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3954.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2490.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 594.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 725.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2589.0
+    }
+  ],
+  "2022": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2184.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1363.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7420.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3481.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2401.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4197.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2348.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3099.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2475.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8515.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 6577.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6127.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 4188.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4528.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 10163.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9872.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5844.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6604.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 12657.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 5047.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 1027.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3213.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8374.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3856.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4693.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 364.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3956.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2492.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 595.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 728.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2587.0
+    }
+  ],
+  "2023": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2186.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1364.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7393.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3466.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2396.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4182.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2339.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3062.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2487.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8526.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 6627.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6121.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 4183.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4515.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 10123.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9815.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5838.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6568.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 12706.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 5027.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 1043.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3191.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8368.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3865.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4673.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 365.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3952.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2465.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 594.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 729.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2598.0
+    }
+  ],
+  "2024": [
+    {
+      "region_code": "110000",
+      "region_name": "北京",
+      "value": 2183.0
+    },
+    {
+      "region_code": "120000",
+      "region_name": "天津",
+      "value": 1364.0
+    },
+    {
+      "region_code": "130000",
+      "region_name": "河北",
+      "value": 7378.0
+    },
+    {
+      "region_code": "140000",
+      "region_name": "山西",
+      "value": 3446.0
+    },
+    {
+      "region_code": "150000",
+      "region_name": "内蒙古",
+      "value": 2388.0
+    },
+    {
+      "region_code": "210000",
+      "region_name": "辽宁",
+      "value": 4155.0
+    },
+    {
+      "region_code": "220000",
+      "region_name": "吉林",
+      "value": 2317.0
+    },
+    {
+      "region_code": "230000",
+      "region_name": "黑龙江",
+      "value": 3029.0
+    },
+    {
+      "region_code": "310000",
+      "region_name": "上海",
+      "value": 2480.0
+    },
+    {
+      "region_code": "320000",
+      "region_name": "江苏",
+      "value": 8526.0
+    },
+    {
+      "region_code": "330000",
+      "region_name": "浙江",
+      "value": 6670.0
+    },
+    {
+      "region_code": "340000",
+      "region_name": "安徽",
+      "value": 6123.0
+    },
+    {
+      "region_code": "350000",
+      "region_name": "福建",
+      "value": 4193.0
+    },
+    {
+      "region_code": "360000",
+      "region_name": "江西",
+      "value": 4502.0
+    },
+    {
+      "region_code": "370000",
+      "region_name": "山东",
+      "value": 10080.0
+    },
+    {
+      "region_code": "410000",
+      "region_name": "河南",
+      "value": 9785.0
+    },
+    {
+      "region_code": "420000",
+      "region_name": "湖北",
+      "value": 5834.0
+    },
+    {
+      "region_code": "430000",
+      "region_name": "湖南",
+      "value": 6539.0
+    },
+    {
+      "region_code": "440000",
+      "region_name": "广东",
+      "value": 12780.0
+    },
+    {
+      "region_code": "450000",
+      "region_name": "广西",
+      "value": 5013.0
+    },
+    {
+      "region_code": "460000",
+      "region_name": "海南",
+      "value": 1048.0
+    },
+    {
+      "region_code": "500000",
+      "region_name": "重庆",
+      "value": 3190.0
+    },
+    {
+      "region_code": "510000",
+      "region_name": "四川",
+      "value": 8364.0
+    },
+    {
+      "region_code": "520000",
+      "region_name": "贵州",
+      "value": 3860.0
+    },
+    {
+      "region_code": "530000",
+      "region_name": "云南",
+      "value": 4655.0
+    },
+    {
+      "region_code": "540000",
+      "region_name": "西藏",
+      "value": 370.0
+    },
+    {
+      "region_code": "610000",
+      "region_name": "陕西",
+      "value": 3953.0
+    },
+    {
+      "region_code": "620000",
+      "region_name": "甘肃",
+      "value": 2458.0
+    },
+    {
+      "region_code": "630000",
+      "region_name": "青海",
+      "value": 593.0
+    },
+    {
+      "region_code": "640000",
+      "region_name": "宁夏",
+      "value": 729.0
+    },
+    {
+      "region_code": "650000",
+      "region_name": "新疆",
+      "value": 2623.0
+    }
+  ]
+}

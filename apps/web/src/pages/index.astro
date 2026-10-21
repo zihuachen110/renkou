@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import ExploreApp from "../components/ExploreApp";
+import type { Meta, NationalPoint, ProvincesByYear } from "../lib/types";
+import { toYi } from "../lib/format";
+import { getMessages, localePath } from "../i18n";
+
+import national from "../../public/data/national_series.json";
+import provincesByYear from "../../public/data/provinces_by_year.json";
+import meta from "../../public/data/meta.json";
+
+const locale = "zh-CN" as const;
+const m = getMessages(locale);
+const series = national as NationalPoint[];
+const byYear = provincesByYear as ProvincesByYear;
+const siteMeta = meta as Meta;
+const latest = series[series.length - 1];
+const title = m.home.title(latest.year, toYi(latest.value));
+const description = m.home.description(latest.year, toYi(latest.value));
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonicalPath="/"
+  locale={locale}
+>
+  <SiteHeader locale={locale} />
+  <main class="mx-auto max-w-content px-6 pb-16">
+    <ExploreApp
+      client:load
+      national={series}
+      provincesByYear={byYear}
+      meta={siteMeta}
+      locale={locale}
+    />
+
+    <section
+      id="insights"
+      class="mt-9 grid border-t border-line md:grid-cols-2"
+    >
+      <article class="py-7 pr-0 md:pr-8">
+        <h2 class="m-0 mb-2 text-lg font-bold tracking-tight">
+          {m.home.insightAgingTitle}
+        </h2>
+        <p class="m-0 max-w-[42ch] text-sm leading-relaxed text-muted">
+          {m.home.insightAgingBody}
+        </p>
+        <a
+          href={localePath(locale, "/sources")}
+          class="mt-3.5 inline-block text-[13px] font-semibold no-underline"
+          >{m.home.insightAgingCta}</a
+        >
+      </article>
+      <article
+        class="border-t border-line py-7 md:border-l md:border-t-0 md:pl-8"
+      >
+        <h2 class="m-0 mb-2 text-lg font-bold tracking-tight">
+          {m.home.insightUpdateTitle}
+        </h2>
+        <p class="m-0 max-w-[42ch] text-sm leading-relaxed text-muted">
+          {m.home.insightUpdateBody}
+        </p>
+        <a
+          href={localePath(locale, "/about")}
+          class="mt-3.5 inline-block text-[13px] font-semibold no-underline"
+          >{m.home.insightUpdateCta}</a
+        >
+      </article>
+    </section>
+
+    <div
+      class="mt-7 border border-dashed border-line bg-surface px-5 py-5 text-center text-[11px] uppercase tracking-wide text-zinc-400"
+      data-ads-slot="below_explore"
+      data-ads-enabled="false"
+    >
+      {m.home.adsSlot}
+    </div>
+  </main>
+  <SiteFooter locale={locale} />
+</BaseLayout>

@@ -1,0 +1,77 @@
+---
+import "../styles/global.css";
+import {
+  getLocaleFromUrl,
+  htmlLang,
+  localePath,
+  type Locale,
+} from "../i18n";
+import { getMessages } from "../i18n/messages";
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  locale?: Locale;
+}
+
+const {
+  title,
+  description,
+  canonicalPath = "/",
+  locale: localeProp,
+} = Astro.props;
+const locale = localeProp ?? getLocaleFromUrl(Astro.url);
+const m = getMessages(locale);
+const site = Astro.site ?? new URL("https://renkou.pages.dev");
+const localizedCanonical = localePath(locale, canonicalPath);
+const canonical = new URL(localizedCanonical, site).href;
+const altZh = new URL(localePath("zh-CN", canonicalPath), site).href;
+const altEn = new URL(localePath("en", canonicalPath), site).href;
+const disclaimerHref = localePath(locale, "/about") + "#disclaimer";
+---
+
+<!doctype html>
+<html lang={htmlLang(locale)}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="zh-CN" href={altZh} />
+    <link rel="alternate" hreflang="en" href={altEn} />
+    <link rel="alternate" hreflang="x-default" href={altZh} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={locale === "en" ? "en_US" : "zh_CN"} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600&family=Fira+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <p
+      class="mx-auto flex max-w-content flex-wrap items-center gap-x-2 gap-y-1 px-6 pt-2.5 text-xs text-muted"
+    >
+      <span class="inline-block h-3 w-0.5 shrink-0 bg-accent" aria-hidden="true"
+      ></span>
+      <span>
+        {m.banner.text}
+        <a
+          href={disclaimerHref}
+          class="ml-1 font-medium text-accent no-underline hover:underline"
+          >{m.banner.disclaimerLink}</a
+        >
+      </span>
+    </p>
+    <slot />
+  </body>
+</html>

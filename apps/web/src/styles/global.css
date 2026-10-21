@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+  body {
+    @apply bg-bg text-ink font-sans text-base leading-normal;
+  }
+  a {
+    @apply text-accent underline-offset-[3px];
+    text-decoration-thickness: 1px;
+  }
+  a:hover {
+    @apply text-teal-700;
+  }
+}
