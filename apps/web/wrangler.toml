@@ -1,0 +1,6 @@
+name = "renkou"
+compatibility_date = "2026-10-21"
+
+# 静态站输出目录（新版 Cloudflare 不再在后台填「构建输出目录」）
+[assets]
+directory = "./dist"

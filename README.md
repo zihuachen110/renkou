@@ -40,6 +40,14 @@ python etl/build_fixtures.py
 
 ## 部署
 
-连接 GitHub 后用 **Cloudflare Pages**：构建命令 `npm run build`，输出目录 `apps/web/dist`。
+连接 GitHub 后用 **Workers 和 Pages**（新版后台）。项目设置：
+
+| 项 | 值 |
+|---|---|
+| 根目录 | `apps/web` |
+| 构建命令 | `npm run build` |
+| 部署命令 | `npx wrangler deploy` |
+
+输出目录写在 `apps/web/wrangler.toml` 的 `[assets] directory = "./dist"`（后台已无「构建输出目录」项）。
 
 广告默认关闭；合规页：`/about` `/sources` `/privacy` `/ads`。
