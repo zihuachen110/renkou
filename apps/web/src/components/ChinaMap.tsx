@@ -113,9 +113,11 @@ export default function ChinaMap({
 
     const map = new Map({
       container: containerRef.current,
+      // No glyphs/sprite — we only draw fill/line layers. External glyph
+      // CDNs (e.g. demotiles.maplibre.org) often hang in CN and leave the
+      // style forever unloaded → blank map canvas.
       style: {
         version: 8,
-        glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
         sources: {},
         layers: [
           {
